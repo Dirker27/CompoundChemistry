@@ -17,43 +17,43 @@ from screens import rules_screen
 # Sets files for atom creation
 # Shelves data to a file
 def set_atoms():
-    atom_data = shelve.open("./data/atom_data.dat")
-    atom_data["Hydrogen"]   = ["Hydrogen"  , "H" , './images/hydrogen.png'  , 1 ]
-    atom_data["Helium"]     = ["Helium"    , "He", './images/helium.png'    , 2 ]
-    atom_data["Lithium"]    = ["Lithium"   , "Li", './images/lithium.png'   , 3 ]
-    atom_data["Beryllium"]  = ["Beryllium" , "Be", './images/beryllium.png' , 4 ]
-    atom_data["Boron"]      = ["Boron"     , "B" , './images/boron.png'     , 5 ]
-    atom_data["Carbon"]     = ["Carbon"    , "C" , './images/carbon.png'    , 6 ]
-    atom_data["Nitrogen"]   = ["Nitrogen"  , "N" , './images/nitrogen.png'  , 7 ]
-    atom_data["Oxygen"]     = ["Oxygen"    , "O" , './images/oxygen.png'    , 8 ]
-    atom_data["Fluorine"]   = ["Fluorine"  , "F" , './images/fluorine.png'  , 9 ]
-    atom_data["Neon"]       = ["Neon"      , "Ne", './images/neon.png'      , 10]
-    atom_data["Sodium"]     = ["Sodium"    , "Na", './images/sodium.png'    , 11]
-    atom_data["Magnesium"]  = ["Magnesium" , "Mg", './images/magnesium.png' , 12]
-    atom_data["Aluminum"]   = ["Aluminum"  , "Al", './images/aluminum.png'  , 13]
-    atom_data["Silicon"]    = ["Silicon"   , "Si", './images/silicon.png'   , 14]
-    atom_data["Phosphorus"] = ["Phosphorus", "P" , './images/phosphorus.png', 15]
-    atom_data["Sulfur"]     = ["Sulfur"    , "S" , './images/sulfur.png'    , 16]
-    atom_data["Chlorine"]   = ["Chlorine"  , "Cl", './images/chlorine.png'  , 17]
-    atom_data["Argon"]      = ["Argon"     , "Ar", './images/argon.png'     , 18]
-    atom_data["Potassium"]  = ["Potassium" , "K" , './images/potassium.png' , 19]
-    atom_data["Calcium"]    = ["Calcium"   , "Ca", './images/calcium.png'   , 20]
-    atom_data["Titanium"]   = ["Titanium"  , "Ti", './images/titanium.png'  , 22]
-    atom_data["Iron"]       = ["Iron"      , "Fe", './images/iron.png'      , 26]
-    atom_data["Nickel"]     = ["Nickel"    , "Ni", './images/nickel.png'    , 28]
-    atom_data["Copper"]     = ["Copper"    , "Cu", './images/copper.png'    , 29]
-    atom_data["Zinc"]       = ["Zinc"      , "Zn", './images/nickel.png'    , 30]    
-    atom_data["Bromine"]    = ["Bromine"   , "Br", './images/bromine.png'   , 35]
-    atom_data["Silver"]     = ["Silver"    , "Ag", './images/silver.png'    , 47]
-    atom_data["Iodine"]     = ["Iodine"    , "I" , './images/iodine.png'    , 53]
-    atom_data["Gold"]       = ["Gold"      , "Au", './images/gold.png'      , 79]
+    atom_data = shelve.open("../data/atom_data.dat")
+    atom_data["Hydrogen"]   = ["Hydrogen"  , "H" , '../images/hydrogen.png'  , 1 ]
+    atom_data["Helium"]     = ["Helium"    , "He", '../images/helium.png'    , 2 ]
+    atom_data["Lithium"]    = ["Lithium"   , "Li", '../images/lithium.png'   , 3 ]
+    atom_data["Beryllium"]  = ["Beryllium" , "Be", '../images/beryllium.png' , 4 ]
+    atom_data["Boron"]      = ["Boron"     , "B" , '../images/boron.png'     , 5 ]
+    atom_data["Carbon"]     = ["Carbon"    , "C" , '../images/carbon.png'    , 6 ]
+    atom_data["Nitrogen"]   = ["Nitrogen"  , "N" , '../images/nitrogen.png'  , 7 ]
+    atom_data["Oxygen"]     = ["Oxygen"    , "O" , '../images/oxygen.png'    , 8 ]
+    atom_data["Fluorine"]   = ["Fluorine"  , "F" , '../images/fluorine.png'  , 9 ]
+    atom_data["Neon"]       = ["Neon"      , "Ne", '../images/neon.png'      , 10]
+    atom_data["Sodium"]     = ["Sodium"    , "Na", '../images/sodium.png'    , 11]
+    atom_data["Magnesium"]  = ["Magnesium" , "Mg", '../images/magnesium.png' , 12]
+    atom_data["Aluminum"]   = ["Aluminum"  , "Al", '../images/aluminum.png'  , 13]
+    atom_data["Silicon"]    = ["Silicon"   , "Si", '../images/silicon.png'   , 14]
+    atom_data["Phosphorus"] = ["Phosphorus", "P" , '../images/phosphorus.png', 15]
+    atom_data["Sulfur"]     = ["Sulfur"    , "S" , '../images/sulfur.png'    , 16]
+    atom_data["Chlorine"]   = ["Chlorine"  , "Cl", '../images/chlorine.png'  , 17]
+    atom_data["Argon"]      = ["Argon"     , "Ar", '../images/argon.png'     , 18]
+    atom_data["Potassium"]  = ["Potassium" , "K" , '../images/potassium.png' , 19]
+    atom_data["Calcium"]    = ["Calcium"   , "Ca", '../images/calcium.png'   , 20]
+    atom_data["Titanium"]   = ["Titanium"  , "Ti", '../images/titanium.png'  , 22]
+    atom_data["Iron"]       = ["Iron"      , "Fe", '../images/iron.png'      , 26]
+    atom_data["Nickel"]     = ["Nickel"    , "Ni", '../images/nickel.png'    , 28]
+    atom_data["Copper"]     = ["Copper"    , "Cu", '../images/copper.png'    , 29]
+    atom_data["Zinc"]       = ["Zinc"      , "Zn", '../images/nickel.png'    , 30]    
+    atom_data["Bromine"]    = ["Bromine"   , "Br", '../images/bromine.png'   , 35]
+    atom_data["Silver"]     = ["Silver"    , "Ag", '../images/silver.png'    , 47]
+    atom_data["Iodine"]     = ["Iodine"    , "I" , '../images/iodine.png'    , 53]
+    atom_data["Gold"]       = ["Gold"      , "Au", '../images/gold.png'      , 79]
     
     # insert
     atom_data.sync()
     atom_data.close()
 
 def set_equations():
-    eq_data = shelve.open('./data/eq_data.dat')
+    eq_data = shelve.open('../data/eq_data.dat')
     eq_data["Water1"]   = ["H^2O^1"  , "H^1+H^1O^1"]
     eq_data["Water2"]   = ["H^2O^1"  , "H^1+O^2"]
     eq_data["Salt1"]    = ["Na^1Cl^1", "Na^1+Cl^1"]
@@ -80,7 +80,7 @@ def set_equations():
 
 def get_equations():
     sides = []
-    eq_data = shelve.open('./data/eq_data.dat')
+    eq_data = shelve.open('../data/eq_data.dat')
 
     for key in eq_data.keys():
         sides.append((eq_data[key][0], eq_data[key][1]))
@@ -99,14 +99,14 @@ def menu():
 
     # Music files
     music_files = []
-    music_files.append('audio//Exp-3.mp3')
-    music_files.append('audio//Revive.mp3')
+    music_files.append('../audio/Exp-3.mp3')
+    music_files.append('../audio/Revive.mp3')
     #music_files.append('audio//Deez.mp3')
-    music_files.append('audio//Aint.mp3')
-    music_files.append('audio//Requiem.mp3')
+    music_files.append('../audio/Aint.mp3')
+    music_files.append('../audio/Requiem.mp3')
     
     # Screen Setup (bckgrd + dimensions + time
-    background=pygame.image.load('images//fusion2.jpg')
+    background=pygame.image.load('../images/fusion2.jpg')
     backgroundRect=background.get_rect()
     SCREEN_WIDTH,SCREEN_HEIGHT = background.get_size()
     size = (width, height) = background.get_size()
@@ -115,17 +115,17 @@ def menu():
     clock=pygame.time.Clock()
 
     # Font + Files + Button setup
-    label = pygame.image.load('images//title.png').convert_alpha()
+    label = pygame.image.load('../images/title.png').convert_alpha()
     label_image_w, label_image_h = label.get_size()
     labelRect = label.get_rect()
     
-    start_base = pygame.image.load('images//start1.png').convert_alpha()
-    rules_base = pygame.image.load('images//rules1.png').convert_alpha()
-    quit_base  = pygame.image.load('images//quit1.png').convert_alpha()
+    start_base = pygame.image.load('../images/start1.png').convert_alpha()
+    rules_base = pygame.image.load('../images/rules1.png').convert_alpha()
+    quit_base  = pygame.image.load('../images/quit1.png').convert_alpha()
 
-    start_hover = pygame.image.load('images//start2.png').convert_alpha()
-    rules_hover = pygame.image.load('images//rules2.png').convert_alpha()
-    quit_hover = pygame.image.load('images//quit2.png').convert_alpha()
+    start_hover = pygame.image.load('../images/start2.png').convert_alpha()
+    rules_hover = pygame.image.load('../images/rules2.png').convert_alpha()
+    quit_hover = pygame.image.load('../images/quit2.png').convert_alpha()
 
     start_rect = start_base.get_rect()
     rules_rect = rules_base.get_rect()
@@ -139,7 +139,7 @@ def menu():
 
     # Bckgd stuffz
     blob_files = []
-    atom_data = shelve.open('data//atom_data.dat')
+    atom_data = shelve.open('../data/atom_data.dat')
     for key in atom_data.keys():
         blob_files.append(atom_data[key][2])
 
@@ -218,6 +218,7 @@ def menu():
             pygame.mixer.music.play()
 
     pygame.mixer.music.stop()
+    sys.exit()
 
 def main():
     set_atoms()

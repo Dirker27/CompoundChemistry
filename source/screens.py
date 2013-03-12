@@ -9,14 +9,14 @@ def win_screen():
     RIGHT = 3
 
     # Screen Setup (bckgrd + dimensions + time
-    background=pygame.image.load('images//Star.jpg')
+    background=pygame.image.load('../images/Star.jpg')
     backgroundRect=background.get_rect()
     SCREEN_WIDTH,SCREEN_HEIGHT = background.get_size()
     size = (width, height) = background.get_size()
     screen = pygame.display.set_mode(size)
     #screen = pygame.display.set_mode(size, pygame.FULLSCREEN)
 
-    label = pygame.image.load('images//youwin.png')
+    label = pygame.image.load('../images/youwin.png')
     labelRect = label.get_rect()
     label_image_w, label_image_h = label.get_size()
     #clock=pygame.time.Clock()
@@ -47,7 +47,7 @@ def rules_screen():
     RIGHT = 3
 
     # Screen Setup (bckgrd + dimensions + time
-    background=pygame.image.load('images//howtoplay.png')
+    background=pygame.image.load('../images/howtoplay.png')
     backgroundRect=background.get_rect()
     SCREEN_WIDTH,SCREEN_HEIGHT = background.get_size()
     size = (width, height) = background.get_size()

@@ -43,7 +43,7 @@ def bond(mola,molb):
 # Uses textbox to interact w/ user
 # Uses Shelves to access atom identification data
 def get_atom(screen, pos):
-    atom_data = shelve.open('./data/atom_data.dat')
+    atom_data = shelve.open('../data/atom_data.dat')
     element = ask(screen, "Atom")
     ta = None
 
@@ -202,7 +202,7 @@ def run_game(sides):
     RIGHT = 3
 
     # Screen Setup (bckgrd + dimensions)
-    background=pygame.image.load('./images/Atomic_Bckgrd2.jpg')
+    background=pygame.image.load('../images/Atomic_Bckgrd2.jpg')
     backgroundRect=background.get_rect()
     SCREEN_WIDTH,SCREEN_HEIGHT = background.get_size()
     size = (width, height) = background.get_size()
@@ -210,17 +210,17 @@ def run_game(sides):
     #screen = pygame.display.set_mode(size, pygame.FULLSCREEN)
 
     # Image Files/Font/Data File Creation
-    trash_file='./images/trash.png'
+    trash_file='../images/trash.png'
     font = pygame.font.Font(None, 40)
     font2 = pygame.font.Font(None, 20)
     
     # Music files
     music_files = []
-    music_files.append('audio//Exp-3.mp3')
-    music_files.append('audio//Revive.mp3')
+    music_files.append('../audio//Exp-3.mp3')
+    music_files.append('../audio//Revive.mp3')
     #music_files.append('audio//Deez.mp3')
-    music_files.append('./audio/Aint.mp3')
-    music_files.append('./audio/Requiem.mp3')
+    music_files.append('../audio/Aint.mp3')
+    music_files.append('../audio/Requiem.mp3')
 
     # Trash Can
     trash_l = Blob(screen,trash_file,(20,20))
@@ -229,23 +229,23 @@ def run_game(sides):
     trash_r.update()
 
     # Enter Button
-    enter_base = pygame.image.load('./images/enter1.png').convert_alpha()
-    enter_hover = pygame.image.load('./images/enter2.png').convert_alpha()
+    enter_base = pygame.image.load('../images/enter1.png').convert_alpha()
+    enter_hover = pygame.image.load('../images/enter2.png').convert_alpha()
     enter_image_w, enter_image_h = enter_base.get_size()
     enter_rect = enter_base.get_rect()
     enter_rect.move_ip((SCREEN_WIDTH/2)-(enter_image_w/2),
                       ((3*SCREEN_HEIGHT/4) - enter_image_h))
 
     # Exit Button
-    quit_base = pygame.image.load('./images/quit1.png').convert_alpha()
-    quit_hover = pygame.image.load('./images/quit2.png').convert_alpha()
+    quit_base = pygame.image.load('../images/quit1.png').convert_alpha()
+    quit_hover = pygame.image.load('../images/quit2.png').convert_alpha()
     quit_image_w, quit_image_h = quit_base.get_size()
     quit_rect = quit_base.get_rect()
     quit_rect.move_ip((SCREEN_WIDTH/2)-(quit_image_w/2), 0)
 
     # Spawn Buttons
-    spawn_base = pygame.image.load('./images/addatom1.png').convert_alpha()
-    spawn_hover = pygame.image.load('./images/addatom2.png').convert_alpha()
+    spawn_base = pygame.image.load('../images/addatom1.png').convert_alpha()
+    spawn_hover = pygame.image.load('../images/addatom2.png').convert_alpha()
     spawn_image_w, spawn_image_h = spawn_base.get_size()
     spawnL_rect = spawn_base.get_rect()
     spawnR_rect = spawn_base.get_rect()
