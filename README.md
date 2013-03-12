@@ -9,7 +9,7 @@ Platforms:
 
 Languages:
 - Python (v3.2)
-- Pygame (v2.9 64-bit)
+- Pygame (v1.9 64-bit)
 
 Authors:
 - Dirk Hortensius: GUI components, MVC designer, integration
